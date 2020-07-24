@@ -6,7 +6,7 @@ LABEL maintainer "Marcel Hofmann <marcelhofmann@live.de>"
 RUN	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys \
 		CC28DD82EF4C718C \
 	&& echo "deb http://apt.pilight.org/ stable main" > /etc/apt/sources.list.d/pilight.list \
-	&& apt-get update && apt-get upgrade -y \
+	&& apt-get update \
 	&& apt-get install -y \
 		pilight \
 		pilight-webgui \
